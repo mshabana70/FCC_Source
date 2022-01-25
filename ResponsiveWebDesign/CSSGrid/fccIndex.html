@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC CSS Grid</title>
+
+    <style>
+        .item1 {
+            background: LightSkyBlue;
+        }
+    
+        .item2 {
+            background: LightSalmon;
+        }
+    
+        .item3 {
+            background: PaleTurquoise;
+        }
+    
+        .item4 {
+            background: LightPink;
+        }
+    
+        .item5 {
+            background: PaleGreen;
+        }
+    
+        .container {
+            font-size: 40px;
+            min-height: 100px;
+            width: 100%;
+            background: LightGray;
+            display: grid;
+
+            /* This code repeats 3 columns with a minimum of 60px width */
+            /* and a maximum of 1 fraction of the screen width */
+            /* grid-template-columns: repeat(3, minmax(60px, 1fr)); */
+
+            /* This code repeats columns with a minimum of 60px width */
+            /* The 'auto-fill' moves 60px columns on the same row as long */
+            /* as there is a space of 60px for it. */
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+    
+        .container2 {
+            font-size: 40px;
+            min-height: 100px;
+            width: 100%;
+            background: Silver;
+            display: grid;
+
+            /* Here is the auto-fit value in the repeat function */
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <div class="container2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>

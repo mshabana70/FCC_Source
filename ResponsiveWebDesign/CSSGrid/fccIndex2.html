@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC CSS Grid Media Query</title>
+    <style>
+        .item1 {
+            background: LightSkyBlue;
+            grid-area: header;
+        }
+    
+        .item2 {
+            background: LightSalmon;
+            grid-area: advert;
+        }
+    
+        .item3 {
+            background: PaleTurquoise;
+            grid-area: content;
+
+            /* Create grid within a grid */
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+            grid-template-rows: 50px 300px;
+            grid-template-areas:
+                "contentH1 contentH2"
+                "contentC1 contentC2";
+        }
+    
+        .item4 {
+            background: lightpink;
+            grid-area: footer;
+        }
+
+        .itemOne {
+            /* Assign grid cells to inner grid */
+            background: lightyellow; 
+            grid-area: contentH2;  
+        }
+
+        .itemTwo {
+            /* Assign grid cells to inner grid */
+            background: lightgreen;  
+            grid-area: contentC2;
+        }
+    
+        .container {
+            /* When screen is less than 300px*/
+            font-size: 1.5em;
+            min-height: 300px;
+            width: 100%;
+            background: LightGray;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px auto 1fr auto;
+            grid-gap: 10px;
+            grid-template-areas:
+                "header"
+                "advert"
+                "content"
+                "footer";
+        }
+    
+        @media (min-width: 300px) {
+            /* When screen is less than 400px and greater than 300px */
+            .container {
+                grid-template-columns: auto 1fr;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas:
+                    "advert header"
+                    "advert content"
+                    "advert footer";
+            }
+        }
+    
+        @media (min-width: 400px) {
+            /* Header and Footer occupy full width of screen */
+            /* when screen is greater than 400px wide  */
+            .container {
+                grid-template-areas:
+                    /* Only change code below this line */
+                    "header header"
+                    "advert content"
+                    "footer footer";
+                /* Only change code above this line */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">advert</div>
+        <div class="item3">
+            <div class="itemOne">paragraph1</div>
+            <div class="itemTwo">paragraph2</div>
+        </div>
+        <div class="item4">footer</div>
+    </div>
+</body>
+</html>

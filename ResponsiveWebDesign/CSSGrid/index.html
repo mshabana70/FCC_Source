@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC CSS Grid</title>
+    <style>
+        body {
+            margin: 10px;
+            background: black;
+        }
+
+        .container {
+            background: darkgray;
+            font-size: 40px;
+            width: 100%;
+            display: grid;
+
+            /* Create three columns of width 100px */
+            grid-template-columns: 100px auto 100px;
+
+            /* Create two rows of height 50px & two rows of 250px */
+            grid-template-rows: 50px 250px 250px 50px;
+
+            /*
+                This snippet creates five columns. 
+              The first column is as wide as its content, 
+              the second column is 50px, the third column 
+              is 10% of its container, and for the last two columns; 
+              the remaining space is divided into three sections, 
+              two are allocated for the fourth column, 
+              and one for the fifth.
+            */
+            /* grid-template-columns: auto 50px 10% 2fr 1fr; */
+
+            /* You may add gaps selectively between columns and rows 
+            using the following commands*/
+            /* grid-column-gap */
+            /* grid-row-gap */
+
+            /* To add gaps between grids faster, use the following commands */
+            /* grid-gap */
+            /*grid-gap: 10px; /*10px gap between rows & columns*/
+            grid-gap: 20px 10px; /*10px gap b/w rows & 20px gap b/w columns*/
+
+            /* You can create an area template */
+            /* using the grid-template-areas property */
+            grid-template-areas:
+                "header header header"
+                "advert1 content content"
+                "advert2 content content"
+                "footer footer footer" ;
+
+
+        }
+
+        .div1 {
+            background: lightskyblue;
+            /* Rather than use grid-column/grid-row */
+            /* to control spacing of cells */
+            /* grid-column: 1 / 4; */
+            /* You can apply the area to the classes */
+            /* you want to have in that area. */
+            grid-area: header;
+        }
+
+        .div2 {
+            background: lightsalmon;
+            grid-area: advert1;
+            
+        }
+
+        .div3 {
+            background: paleturquoise;
+            /* justify-self: center; */
+            grid-area: content;
+        }
+
+        .div4 {
+            background: lightpink;
+            grid-area: advert2;
+        }
+
+        .div5 {
+            background: palegreen;
+            /* grid-column: 1 / 4; */
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+    </main>
+</body>
+</html>

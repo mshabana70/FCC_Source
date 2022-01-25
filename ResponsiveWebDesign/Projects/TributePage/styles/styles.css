@@ -1,0 +1,130 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background: #ebebeb;
+  font-height: 20px;
+}
+
+#main {
+  margin: 10px;
+}
+
+.header {
+  text-align: center;
+  border: 2mm ridge #ffe194;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+#title {
+  font-size: 60px;
+}
+
+#sub-title {
+  font-size: 25px;
+  color: #8c8c8c;
+}
+
+.sub-heading {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#p-intro {
+  margin: 0px;
+}
+
+.intro-div {
+  background: #d68aeb;
+  color: white;
+}
+
+#tribute-info {
+  display: inline-block;
+  width: 70%;
+  max-height: 100%;
+  font-size: 25px;
+  padding-top: 0px;
+  margin: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background: #ff87cc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: #ffd568;
+  font-size: 26px;
+  background: #ff94a4;
+}
+
+li {
+  padding-top: 5px;
+}
+
+#img-div {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  justify-content: center center;
+  margin: 10px;
+  padding: 20px 10px 10px 10px;
+}
+
+#img-caption {
+  font-size: 0.85em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#more-info {
+  text-align: center;
+  border: 2mm ridge #ffe194;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+figcaption {
+  color: #8c8c8c;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 3.5em;
+    line-height: 1.2em;
+  }
+
+  .intro-div {
+    text-align: center;
+  }
+
+  #img-div {
+    width: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .intro-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #img-div {
+    width: auto;
+    margin: auto;
+    horizontal-align: middle;
+  }
+  #tribute-info {
+    width: auto;
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Visual Design</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0px;
+            height: 100%;
+            background: linear-gradient(-45deg, #d17474, #e4b04f, #ebffcc);
+        }
+        h4 {
+            /* Center h4 text */
+            /* Give a gray background color to h4 text */
+            text-align: center;
+            background-color: rgba(45, 45, 45, 0.1);
+            padding: 10px;
+            font-size: 27px;
+            /*set the html tag to uppercase text*/
+            text-transform: uppercase;
+        }
+    
+        p {
+            /* 'justify' space between text in */
+            /* <p> tag  */
+            text-align: justify;
+        }
+    
+        .links {
+            /* A value of 1 is opaque, which isn't */
+            /* transparent at all. */
+            /* A value of 0.5 is half see-through. */
+            /* A value of 0 is completely transparent. */
+            opacity: 0.7;
+            text-align: left;
+            color: black;
+        }
+    
+        #thumbnail {
+            /* Apply Shadowing to full card div */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+    
+        .fullCard {
+            width: 245px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px auto;
+            padding: 4px;
+            background: linear-gradient(45deg, #CCFFFF, #ebffcc);
+            /* Skew full card along x-axis*/
+            transform: skewX(10deg);
+        }
+    
+        .cardContent {
+            padding: 10px;
+        }
+    
+        .cardText {
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            margin-top: 30px;
+        }
+
+        /* Styling for a cresent moon */
+        .cresent-moon {
+            margin: 10px auto;
+            width: 100px;
+            height: 100px;
+            background-color: whitesmoke;
+            border-radius: 50%;
+            box-shadow: 25px 8px 0px 0px black;
+        }
+
+        .cresent-moon:hover {
+            /* Create animation for moon hover effect */
+            animation-name: background-anim;
+            animation-duration: 750ms;
+            animation-fill-mode: forwards;
+        }
+
+        /* Styling for a heart shape */
+        .heart {
+            position: relative;
+            margin: 10px auto;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            transform: rotate(-45deg);
+            /* Define animation in heart class*/
+            animation-name: rainbow;
+            animation-duration: 5s;
+        }
+
+        .heart::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: -25px;
+            left: 0px;
+            border-radius: 50%;
+            /* apply animation to pseudo elements*/
+            animation: rainbow 5s;
+        }
+
+        .heart::after {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 0px;
+            left: 25px;
+            border-radius: 50%;
+            /* apply animation to pseudo elements*/
+            animation: rainbow 5s;
+        }
+
+        .ball {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: linear-gradient(45deg, white, pink, #6cffff);
+            border-radius: 50%;
+            /* Define the bounce animation */
+            animation-name: bounce;
+            animation-duration: 3s;
+
+            /* # of times the animation runs */
+            animation-iteration-count: infinite;
+
+            /* Determine speed of animation */
+            /* Can be made to look more natural with bezier curve*/
+            animation-timing-function: linear;
+        }
+
+        #fade-ball {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: linear-gradient(45deg, white, pink, #6cffff);
+            border-radius: 50%;
+            /* Define the fade animation */
+            animation-name: fade;
+            animation-duration: 3s;
+
+            /* # of times the animation runs */
+            animation-iteration-count: infinite;
+        }
+
+        .time-ball {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: linear-gradient(45deg, white, pink, #6cffff);
+            border-radius: 50%;
+            animation-name: fade;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #ball1 {
+            top: 10px;
+            animation-timing-function: linear;
+        }
+
+        #ball2 {
+            top: 30px;
+            animation-timing-function: ease-out;
+        }
+
+
+        /* Creating a rainbow animation for my heart shape */
+
+        @keyframes rainbow{
+            0% {
+                background-color: yellow
+            }
+
+            25% {
+                background-color: orange;
+            }
+
+            50% {
+                background-color: darkorange;
+            }
+
+            75% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: darkred;
+            }
+        }
+
+        /* Style the background-color animation for moon hover */
+        @keyframes background-anim {
+            100% {
+                background: linear-gradient(45deg, whitesmoke, #1fdddd);
+            }
+        }
+
+        /* Styling fade animation to move ball to left and fade at 100% */
+        @keyframes bounce  {
+            0% {
+                left: 20px;
+            }
+
+            45% {
+                left: 90%;
+                width: 90px;
+                height: 105px;
+            }
+
+            50% {
+                left: 95%;
+                width: 70px;
+                height: 115px;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+        /* Styling fade animation to move ball to left and fade at 100% */
+        @keyframes fade  {
+            0% {
+                left: 20px;
+            }
+
+            100% {
+                left: 95%;
+                opacity: 0;
+            }
+        }
+
+        
+
+    </style>
+    <h3>Info Card: </h3>
+    <div class="fullCard" id="thumbnail">
+        <div class="cardContent">
+            <div class="cardText">
+                <h4>Alphabet</h4>
+                <hr>
+                <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at
+                        <strong>Stanford University</strong>.</em></p>
+            </div>
+            <div class="cardLinks">
+                <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a><br><br>
+                <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <h3>Cresent Moon: </h3>
+    <div class="cresent-moon"></div>
+    <hr class="divider">
+    <h3>Heart: </h3>
+    <div class="heart"></div>
+    <hr class="divider">
+    <h3>Bouncing Ball: </h3>
+    <div class="ball"></div>
+    <hr class="divider">
+    <h3>Fading Ball: </h3>
+    <div id="fade-ball"></div>
+    <hr class="divider">
+    <h3>Animation timing Ball: </h3>
+    <div class="time-ball" id="ball1"></div>
+    <div class="time-ball" id="ball2"></div>
+    <hr class="divider">
+</body>
+</html>
