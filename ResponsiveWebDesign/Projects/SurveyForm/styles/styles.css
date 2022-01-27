@@ -104,6 +104,17 @@ main {
   border-radius: 5px;
 }
 
-.form-group #default {
-  opacity: 0.4;
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  margin: 10px auto;
+}
+
+.radio-group #radio-label {
+  padding: 5px 5px 5px 7px;
+}
+
+.radio-group input {
+  margin-left: 20px;
 }
