@@ -62,3 +62,48 @@ main {
   max-width: 700px;
   margin: 0 auto;
 }
+
+/*== FORM STYLING ==*/
+
+#survey-form {
+  background-color: red;
+  padding: 5px 5px;
+}
+
+.input {
+  min-width: 95%;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+
+  font-size: 0.9em;
+
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  outline: none;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label {
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.form-group {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group select {
+  padding: 8px;
+  font-size: inherit;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.form-group #default {
+  opacity: 0.4;
+}

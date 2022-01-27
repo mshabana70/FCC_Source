@@ -15,10 +15,39 @@
     </header>
     <main class="form-container">
         <form id="survey-form">
-            <label for="name">
-                <p>Name:</p>
-                <input type="text" id="name" placeholder="Enter your first name:">
-            </label>
+            <label id="name-label">Name:</label>
+            <input class="input" type="text" id="name" placeholder="Enter your full name:" required>
+            
+            <label id="email-label">Email:</label>
+            <input class="input" type="email" id="email" placeholder="Enter your email: (e.g example@email.com)" required>
+            
+            <label id="number-label">Age: (Optional)</label>
+            <input class="input" type="number" id="number" min="1" max="199" placeholder="Enter your Age:">
+
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">Select your favorite dessert:</label>
+                <select name="dessert" id="dropdown">
+                    <option id="default" value="default" selected>select option</option>
+                    <option value="cake">Cake</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="cotton-candy">Cotton Candy</option>
+                    <option value="ice-cream">Ice Cream</option>
+                    <option value="hard-candy">Hard Candy</option>
+                </select>
+            </div>
+
+            <div class="radio-group">
+                <label id="radio-label" for="radio">Would you say you have a sweet tooth?</label>
+                <label for="sweet-choice-1">
+                    <input type="radio" name="sweet-choice" id="sweet-choice-1">Most Definitely
+                </label>
+            </div>
+                
+                
+                
+                <br>
+            
+            <button type="submit">Submit Form</button>
         </form>
     </main>
 </body>
