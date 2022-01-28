@@ -129,6 +129,10 @@ main {
   margin-left: 10px;
 }
 
+.checkbox-label:hover {
+  color: #540b0e;
+}
+
 .checkbox-group input {
   margin: 10px 8px 10px 20px;
 }
@@ -156,6 +160,16 @@ button {
   background: hsl(193, 34%, 45%);
   text-shadow: 0 2px 1px #beb26a;
   box-shadow: 0px 4px 4px hsl(193, 34%, 15%);
+}
+
+button:hover {
+  background: hsl(193, 34%, 25%);
+  color: #fdeb82;
+}
+
+button:active {
+  background: hsl(193, 34%, 20%);
+  color: #fde977;
 }
 
 .hr-header {
