@@ -24,18 +24,6 @@
             <label class="label-text" id="number-label">Age: <small>(Optional)</small></label>
             <input class="input" type="number" id="number" min="1" max="199" placeholder="Enter your Age:">
 
-            <div class="form-group">
-                <label class="label-text" id="dropdown-header" for="dropdown">Select your favorite dessert:</label>
-                <select name="dessert" id="dropdown">
-                    <option id="default" value="default" selected>select option</option>
-                    <option value="cake">Cake</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="cotton-candy">Cotton Candy</option>
-                    <option value="ice-cream">Ice Cream</option>
-                    <option value="hard-candy">Hard Candy</option>
-                </select>
-            </div>
-
             <div class="radio-group">
                 <label class="label-text" id="radio-header">Would you say you have a sweet tooth?</label>
                 <label class="radio-label" for="sweet-choice-1">
@@ -53,6 +41,32 @@
                 <label class="radio-label" for="sweet-choice-5">
                     <input type="radio" name="sweet-choice" id="sweet-choice-5">Sugar is a Sin
                 </label>
+            </div>
+
+            <div class="form-group">
+                <label class="label-text" id="dropdown-header" for="dropdown">Select your favorite dessert:</label>
+                <select name="dessert" id="dropdown">
+                    <option id="default" value="default" selected>select option</option>
+                    <option value="cake">Cake</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="cotton-candy">Cotton Candy</option>
+                    <option value="ice-cream">Ice Cream</option>
+                    <option value="hard-candy">Hard Candy</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="label-text" id="non-dropdown-header" for="non-dropdown">Select your least favorite dessert:</label>
+                <select name="non-dessert" id="non-dropdown">
+                    <option id="non-default" value="default" selected>select option</option>
+                    <option value="cake">Cake</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="cotton-candy">Cotton Candy</option>
+                    <option value="ice-cream">Ice Cream</option>
+                    <option value="hard-candy">Hard Candy</option>
+                    <option value="sweet-lover">I Love Dessert!!</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
 
             <div class="checkbox-group">
