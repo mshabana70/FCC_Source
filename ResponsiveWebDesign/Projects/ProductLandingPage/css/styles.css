@@ -138,7 +138,7 @@ ul li {
   margin-right: 0;
 }
 
-/* Product Section Styling */
+/*== Product Section Styling ==*/
 .product-section {
   background: #e7e7e7;
   padding: 50px 40px 40px 40px;
@@ -223,6 +223,58 @@ ul li {
 }
 
 /*== Contact Section ==*/
+.contact-section {
+  background: #e7e7e7;
+  padding: 50px 40px 40px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-section .row h1 {
+  font-size: 40px;
+  font-weight: normal;
+  padding-left: 40px;
+  color: #264653;
+}
+
+#form {
+  padding-right: 40px;
+}
+
+.contact-section input[type="email"],
+.contact-section input[type="submit"] {
+  padding: 10px 30px;
+  height: 40px;
+}
+
+.contact-section input[type="email"] {
+  max-width: 300px;
+  border: 1px solid #264653;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: -2px;
+}
+
+.contact-section input[type="submit"] {
+  background: #2a9d8f;
+  margin-left: -2px;
+  border: 1px solid #264653;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.contact-section input[type="submit"]:hover {
+  background: #066d61;
+  color: #e7e7e7;
+  transition: all 0.3s ease;
+}
+
+
 
 /*== Media Queries ==*/
 @media screen and (max-width: 900px) {
@@ -256,6 +308,7 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  /* Product Responsiveness */
   .product-row {
     flex-direction: column;
   }
@@ -263,6 +316,20 @@ ul li {
   .product-card {
     margin: 20px auto;
     width: 70%;
+  }
+
+  /* Contact Us Responsiveness*/
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-section .row h1 {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  #form {
+    padding-right: 0;
   }
 }
 
