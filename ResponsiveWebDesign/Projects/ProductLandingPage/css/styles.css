@@ -51,7 +51,7 @@ ul li {
   display: flex;
 }
 
-.nav-link a {
+.nav-link {
   display: inline-block;
   padding: 10px;
   color: #fff;
