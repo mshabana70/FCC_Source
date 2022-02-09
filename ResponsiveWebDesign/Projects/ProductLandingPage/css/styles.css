@@ -87,6 +87,7 @@ ul li {
 .header-text {
   margin-right: 20px;
   line-height: 2;
+  color: #264653;
 }
 
 /*== Customer Feedback Styling ==*/
@@ -152,6 +153,10 @@ ul li {
   color: #264653;
 }
 
+.product-row {
+  display: flex;
+}
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -164,7 +169,6 @@ ul li {
   padding: 20px;
   margin: 0 10px;
   color: #264653;
-  box-shadow: 2px 5px 7px #264653;
   text-align: center;
   color: #fff;
 }
@@ -206,6 +210,20 @@ ul li {
   cursor: pointer;
 }
 
+/* Hover effect for product card & elements */
+.product-card:hover {
+  box-shadow: -1px 2px 7px #264653;
+  transition: all 0.3s ease;
+}
+
+.product-section .product-btn .select-btn:hover {
+  background: #066d61;
+  color: #e7e7e7;
+  transition: all 0.3s ease;
+}
+
+/*== Contact Section ==*/
+
 /*== Media Queries ==*/
 @media screen and (max-width: 900px) {
   /* Header Responsiveness*/
@@ -234,6 +252,17 @@ ul li {
 
   .customer-card {
     margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-row {
+    flex-direction: column;
+  }
+
+  .product-card {
+    margin: 20px auto;
+    width: 70%;
   }
 }
 
