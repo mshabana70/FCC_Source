@@ -274,7 +274,19 @@ ul li {
   transition: all 0.3s ease;
 }
 
+/*== Footer Styling ==*/
+footer {
+  background-color: #264653;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+}
 
+footer p {
+  display: inline-block;
+  margin-top: 40px;
+}
 
 /*== Media Queries ==*/
 @media screen and (max-width: 900px) {
