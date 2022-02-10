@@ -8,7 +8,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,27 +28,27 @@ header {
   background-image: radial-gradient(circle at bottom, rgb(126, 193, 255), #fff);
 }
 
-.navbar {
+#navbar {
   position: fixed;
-  right: 0px;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   padding: 30px 40px;
 }
 
-.navbar ul {
+#navbar ul {
   list-style-type: none;
   display: flex;
+  justify-content: flex-end;
 }
 
-.navbar .nav-link {
+#navbar .nav-link {
   text-decoration: none;
   color: #fff;
   padding: 10px;
   cursor: pointer;
 }
 
-.navbar .nav-link:hover {
+#navbar .nav-link:hover {
   color: blue;
 }
 
@@ -79,6 +79,7 @@ header img {
   left: 0px;
   bottom: 0px;
   z-index: 99;
+  pointer-events: none;
   animation: slideRight 3s ease;
 }
 
@@ -87,6 +88,7 @@ header img {
   right: 0px;
   bottom: -150px;
   z-index: 98;
+  pointer-events: none; /* image was blocking nav links */
   animation: slideLeft 3s linear;
 }
 
