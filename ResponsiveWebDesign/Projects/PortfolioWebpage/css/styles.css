@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&family=Poppins:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+}
+
+header {
+  height: 100vh;
+  padding: 10px 40px;
+
+  /* Working with radial gradients */
+  background-image: radial-gradient(circle at bottom, rgb(126, 193, 255), #fff);
+}
