@@ -22,10 +22,10 @@ html {
 /*== Header Styling ==*/
 
 header {
-  height: 92vh;
+  height: 100vh;
 
   /* Working with radial gradients */
-  background-image: radial-gradient(circle at bottom, rgb(126, 193, 255), #fff);
+  background-image: radial-gradient(circle at bottom, #7ec1ff, #fff);
 }
 
 #navbar {
@@ -33,6 +33,7 @@ header {
   width: 100vw;
   background-color: black;
   padding: 30px 40px;
+  z-index: 100;
 }
 
 #navbar ul {
@@ -70,14 +71,14 @@ header {
 }
 
 header img {
-  display: inline-block;
+  display: block;
   position: absolute;
 }
 
 .skyline-bg {
   width: 100%;
   left: 0px;
-  bottom: 0px;
+  bottom: -30px;
   z-index: 99;
   pointer-events: none;
   animation: slideRight 3s ease;
@@ -92,10 +93,106 @@ header img {
   animation: slideLeft 3s linear;
 }
 
+/*== Project section styling ==*/
+#projects {
+  position: relative;
+  top: -20px;
+  height: 100%;
+  background-image: linear-gradient(180deg, #000, #7ec1ff);
+  padding: 30px 40px;
+}
+
+.project-header {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.project-header h2 {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.project-grid {
+  display: grid;
+  margin: 70px auto;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+/* Project Card Styling */
+
+.project-card {
+  height: 250px;
+  width: 250px;
+  background: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.project-card-img {
+  height: 100%;
+  margin: 10px;
+}
+
+.project-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-title {
+  display: none;
+  text-align: center;
+  background: #7ec1ff;
+  color: #000;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px 30px;
+}
+
+/* Hover on image to display title of project */
+/* by switching display to block for  */
+/* .project-card-title, would have liked to do it  */
+/* with the .project-card rule but it already has a  */
+/* display of flex, should be a workaround */
+.project-card-img:hover + .project-card-title {
+  display: block;
+  transition: all 2s ease-in;
+}
+
+.project-additional {
+  text-align: center;
+}
+
+.project-additional input {
+  width: 33%;
+  padding: 15px 30px;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.project-additional input:hover {
+  background-color: #7ec1ff;
+  transition: all 0.5s ease-in;
+  border: 5px solid #e7e7e7;
+}
+
 /* Responsive media queries */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 990px) {
   .skyline-bg {
-    bottom: -50px;
+    bottom: -80px;
   }
 
   .mountain-bg {
