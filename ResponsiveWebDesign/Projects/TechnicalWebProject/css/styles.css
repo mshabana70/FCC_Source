@@ -50,6 +50,7 @@ header {
   background: var(--primary);
   box-shadow: var(--shadow);
   color: #fff;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -81,8 +82,54 @@ header {
 #main-doc {
   background: var(--dark);
   grid-area: main;
-  padding: 2rem 1.5rem;
+  padding: 2rem 2rem;
   overflow-y: auto;
+}
+
+.main-section header {
+  font-weight: 500;
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 3px #001247;
+}
+
+.main-content {
+  /* background: #000; */
+}
+
+.main-content-text {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.main-content-text h2 {
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.main-content-text h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--secondary);
+}
+
+.main-content-text p {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.main-content-text code {
+  font-size: 1.5rem;
+  background: #ccc;
+}
+
+.main-content-text a {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.main-content-text a:hover {
+  color: #fff;
 }
 
 /*== Media Queries ==*/
