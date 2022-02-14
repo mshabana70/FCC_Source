@@ -10,13 +10,17 @@
     <div class="grid-container">
         <!-- Navigation -->
         <nav id="navbar">
-            <header>CSS Docs</header>
+            <header>CSS Flexbox</header>
             <ul>
                 <li><a class="nav-link" href="#CSS_Flexbox">CSS Flexbox</a></li>
-                <li><a class="nav-link" href="#CSS_Grid">CSS Grid</a></li>
-                <li><a class="nav-link" href="#Media_Queries">Media Queries</a></li>
-                <li><a class="nav-link" href="#CSS_Animations">CSS Animations</a></li>
-                <li><a class="nav-link" href="#Units">Units</a></li>
+                <li><a class="nav-link" href="#Flexbox_Axes">Flexbox Axes</a></li>
+                <li><a class="nav-link" href="#Flexbox_Lines">Flexbox Lines</a></li>
+                <li><a class="nav-link" href="#Flex_Container">Flex Container</a></li>
+                <li><a class="nav-link" href="#Multi-Line_Container">Multi-Line Container</a></li>
+                <li><a class="nav-link" href="#Flex_Flow">Flex Flow</a></li>
+                <li><a class="nav-link" href="#Properties_Flex-Items">Properties Flex Items</a></li>
+                <li><a class="nav-link" href="#Alignment">Alignment</a></li>
+                <li><a class="nav-link" href="#Justification">Justification</a></li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -25,7 +29,6 @@
                 <div class="main-content">
                     <ul class="main-content-text">
                         <li>
-                            <h2>Basic Concept:</h2>
                             <p>
                                 The Flexibile Box Module (also know as 'flexbox'), is a
                                 one dimensional layout model. This module is used as a method
@@ -40,26 +43,6 @@
                                 layouts for columns and rows similtaneously.
                             </p>
                         </li>
-                        <li>
-                            <h2>Flex Box Axes</h2>
-                            <p>
-                                There are two axes that a developer should consider when working with flexbox - the main axis and
-                                the cross axis. 
-                                <ul>
-                                    <li>
-                                        <h3> The Main Axis:</h3>
-                                        <p>
-                                            The main axes is defined by the <code>flex-direction</code>, which has four possible values: 
-                                            <code>row</code>,
-                                            <code>row-reverse</code>,
-                                            <code>column</code>,
-                                            <code>column-reverse</code>.
-                                        </p>
-                                    </li>
-                                    <li></li>
-                                </ul>
-                            </p>
-                        </li>
                         <li></li>
                         <li></li>
                     </ul>
@@ -67,17 +50,97 @@
                 </div>
                 
             </section>
-            <section id="CSS_Grid" class="main-section">
-                <header>CSS Grid</header>
+            <section id="Flexbox_Axes" class="main-section">
+                <header>Flexbox Axes</header>
+                <div class="main-content">
+                    <ul class="main-content-text">
+                        <li>
+                            <p> There are two axes that a developer should consider when working with flexbox - the main axis and
+                            the cross axis.</p>
+                            <h2>The Main Axis</h2>
+                            <p>
+                                The main axes is defined by the <code>flex-direction</code>, which has four possible values:
+                                <code>row</code>,
+                                <code>row-reverse</code>,
+                                <code>column</code>,
+                                <code>column-reverse</code>.
+                                <br><br>
+                                With the <code>row</code> or <code>row-reverse</code>, the main axis will run along the inline or horizontal
+                                direction.
+                            </p>
+                            <div class="example-code main-axis">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                            <p>
+                                With the <code>column</code> or <code>column-reverse</code>, the main axis will run vertically or in the block
+                                direction.
+                            </p>
+                            <div class="example-code main-axis-2">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>The Cross Axis</h2>
+                            <p>
+                                The cross axis is perpendicular to the main axis, defined by the <code>flex-direction</code>. If the main axis is set to 
+                                <code>row</code> or <code>row-reverse</code>, then the cross axis would be in the direction of the columns.
+                                <br><br>
+                                If the main axis is set to
+                                <code>column</code> or <code>column-reverse</code>, then the cross axis would be in the direction of the rows.
+                                <br><br>
+                                It is important to understand the axis you are working on. It will become useful when we begin to discuss <a href="#Alignment">aligning</a> and 
+                                <a href="#Justification">justifying</a> the items within our flex-container.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section id="Media_Queries" class="main-section">
-                <header>Media Queries</header>
+            <section id="Flexbox_Lines" class="main-section">
+                <header>Flexbox Lines</header>
+                <div class="main-content">
+                    <ul class="main-content-text">
+                        <li>
+                            <p>
+                                When working with flexbox, we no longer make assumptions about the writing standards of a document. Originally,
+                                most documents on the web would start from the left side of the page and carry text over to the right side of
+                                the page.
+                                Modern layouts have no assumptions and support a wide range of writing modes, whether that be from left-to-right
+                                or
+                                right-to-left.
+                                <br><br>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section id="CSS_Animations" class="main-section">
-                <header>CSS Animations</header>
+            <section id="Flex_Container" class="main-section">
+                <header>Flex Container</header>
+                <div class="main-content">
+                    <ul class="main-content-left">
+                        <li>
+                            <p></p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <section id="Units" class="main-section">
-                <header>Units</header>
+            <section id="Multi-Line_Container" class="main-section">
+                <header>Multi-Line Container</header>
+            </section>
+            <section id="Flex_Flow" class="main-section">
+                <header>Flex-Flow Shorthand</header>
+            </section>
+            <section id="Properties_Flex-Items" class="main-section">
+                <header>Multi-Line Container</header>
+            </section>
+            <section id="Alignment" class="main-section">
+                <header>Alignment of Flex Items</header>
+            </section>
+            <section id="Justification" class="main-section">
+                <header>Justification of Flex Items</header>
             </section>
         </main>
     </div>

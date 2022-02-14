@@ -132,6 +132,42 @@ header {
   color: #fff;
 }
 
+/* Example Code styling */
+
+.example-code {
+  position: relative;
+  height: auto;
+  width: 90%;
+  border: 5px dashed #ccc;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.example-code .box-1,
+.example-code .box-2,
+.example-code .box-3 {
+  height: 100%;
+  width: 100px;
+  background: var(--primary);
+  margin: 5px;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3;
+}
+
+/* Main / Cross Axis */
+
+.example-code ~ .main-axis-2 {
+  flex-direction: column;
+}
+
+.main-axis-2 .box-1,
+.main-axis-2 .box-2,
+.main-axis-2 .box-3 {
+  width: 100%;
+  margin: 5px auto;
+}
+
 /*== Media Queries ==*/
 @media (max-width: 800px) {
   .grid-container {
