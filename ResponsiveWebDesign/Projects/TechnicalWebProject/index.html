@@ -268,6 +268,33 @@
                             <p>
                                 <code>flex-grow</code> property defines the stretch of the flex items within your flex container. Setting the value to a positive integer
                                 will allow the flex items to grow along the main axis from their <code>flex-basis</code>.
+                                <br><br>
+                                Say we applied the <code>flex-grow</code> property to all the examples above with a value of 1. The available space in the flex container would
+                                be equally shared between the flex items, and they would stretch to fill the container on the main axis.
+                            </p>
+                            <div class="example-code flex-prop-2">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                            <p>
+                                If we were change <code>flex-grow</code> property for the first flex item to 2, this would change the ratio of available space given to each flex item.
+                                Out of the 200 pixels of available space, the first flex item would take 100 pixels compared to the second and third item's 50 pixels. Resulting in the 
+                                available space to be distributed on a ratio of 2:1.
+                            </p>
+                            <div class="example-code flex-prop-3">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 id="flex-shrink">The flex-shrink property</h3>
+                            <p>
+                                Works similarily to the <code>flex-grow</code> property, but rather than give available space to flex items, <code>flex-shrink</code> takes away available
+                                space. When applying a positive value to the <code>flex-shrink</code> property, the flex item can now shrink smaller than its flex-basis. An item with a larger
+                                positive value for <code>flex-shrink</code> will shrink faster than other flex items that have lower values. For more information on the details of these 
+                                properties, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax">MDN Web Docs</a>.
                             </p>
                         </li>
                     </ul>
@@ -275,6 +302,51 @@
             </section>
             <section id="Alignment" class="main-section">
                 <header>Alignment of Flex Items</header>
+                <div class="main-content">
+                    <ul class="main-content-text">
+                        <li>
+                            <h2>align-items</h2>
+                            <p>
+                                To align items on the cross axis of your flex container, use the <code>align-items</code> property.
+                                <br><br>
+                                The default value of the <code>align-items</code> property is <code>stretch</code>, which is the reason behind flex items stretching the height of a flex container.
+                                Other values that can be assigned to this property include:
+                            </p>
+                        </li>
+                        <li>
+                            <h3>stretch:</h3>
+                            <div class="example-code flex-align-1">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>flex-start:</h3>
+                            <div class="example-code flex-align-2">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>flex-end:</h3>
+                            <div class="example-code flex-align-3">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>center:</h3>
+                            <div class="example-code flex-align-4">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="Justification" class="main-section">
                 <header>Justification of Flex Items</header>
