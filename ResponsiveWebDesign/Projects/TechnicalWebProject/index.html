@@ -109,9 +109,7 @@
                                 most documents on the web would start from the left side of the page and carry text over to the right side of
                                 the page.
                                 Modern layouts have no assumptions and support a wide range of writing modes, whether that be from left-to-right
-                                or
-                                right-to-left.
-                                <br><br>
+                                or right-to-left.
                             </p>
                         </li>
                     </ul>
@@ -120,21 +118,116 @@
             <section id="Flex_Container" class="main-section">
                 <header>Flex Container</header>
                 <div class="main-content">
-                    <ul class="main-content-left">
+                    <ul class="main-content-text">
                         <li>
-                            <p></p>
+                            <p>
+                                An area or <code>div</code> of a document that is designated for using flexbox is called a <strong>flex container</strong>. To create a
+                                flex container, we set the value of the container's <code>display</code> property to <code>flex</code> or <code>inline-flex</code>. Once
+                                the value is changed, the children of the flex container become <strong>flex items</strong>. Since most properties have initial values defined,
+                                it is important to understand what those initial values are when defining a flex container.
+                            </p>
+                            <ul>
+                                <li>Flex items will display in a row (<code>flex-direction</code> has a value of <code>row</code>).</li>
+                                <li>The flex items begin from the start edge of the main axis (left to right).</li>
+                                <li>The flex items dont stretch, but can shrink.</li>
+                                <li>The items will stretch to fill size of cross axis.</li>
+                                <li>The <a href="#">flex-basis</a> property has value of <code>auto</code>.</li>
+                                <li>The <a href="#">flex-wrap</a> property has value of <code>nowrap</code>.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Changing flex-direction</h2>
+                            <p>
+                                Applying the <code>flex-direction</code> property to a flex container allows us to change the direction that the flex items are displayed.
+                                Take a look at the live samples below to see <code>flex-direction</code> values in action!
+                            </p>
+                            <h3>row:</h3>
+                            <div class="example-code flex-dir-1">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                            <h3>row-reverse:</h3>
+                            <div class="example-code flex-dir-2">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                            <h3>column:</h3>
+                            <div class="example-code flex-dir-3">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                            <h3>column-reverse:</h3>
+                            <div class="example-code flex-dir-4">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
             <section id="Multi-Line_Container" class="main-section">
                 <header>Multi-Line Container</header>
+                <div class="main-content">
+                    <ul class="main-content-text">
+                        <li>
+                            <p>
+                                Flexbox has an intuitive method to creating multi-line containers. Although flexbox is a one dimensional
+                                box model, it
+                                is possible for our flex items to 'wrap' onto multiple lines. Once those flex items are wrapped to
+                                another line, it is best
+                                to consider each of those lines are their own flex container. All distribution rules that were written
+                                for the initial
+                                flex container will occur across those lines, without reference to the lines either side.
+                                <br><br>
+                                To implement this 'wrap' behavior, use the <code>flex-wrap</code> property with a value of
+                                <code>wrap</code>. With this property,
+                                all flex items that are too large to display on one line, will wrap onto another line below.
+                                <br><br>
+                                Based on the live sample below, you can see that the flex items have a large enough width to not fit all
+                                items within the same line.
+                                (note: resize the screen to see the flex-wrap property in action!)
+                            </p>
+                            <div class="example-code flex-wrap-1">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                            <p>
+                                By default, the initial value of <code>flex-wrap</code> is set to <code>nowrap</code>. With this value,
+                                the flex items will instead
+                                shrink to fit the container they are in, as shown in the live sample below. (note: using
+                                <code>nowrap</code> will cause an overflow
+                                if the items are unable to shrink any further.)
+                            </p>
+                            <div class="example-code flex-wrap-2">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="Flex_Flow" class="main-section">
                 <header>Flex-Flow Shorthand</header>
+                <div class="main-content">
+                    <ul class="main-content-text">
+                        <li>
+                            <p>
+                                The <code>flex-flow</code> property is shorthand for the combination of both <code>flex-direction</code> and
+                                <code>flex-wrap</code>. The syntax for the values of <code>flex-flow</code> is as follows; the first value specifed
+                                is for <code>flex-direction</code> and the second value is for <code>flex-wrap</code>.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="Properties_Flex-Items" class="main-section">
-                <header>Multi-Line Container</header>
+                <header>Properties for Flex Items</header>
             </section>
             <section id="Alignment" class="main-section">
                 <header>Alignment of Flex Items</header>

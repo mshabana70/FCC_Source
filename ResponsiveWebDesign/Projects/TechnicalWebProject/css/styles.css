@@ -35,6 +35,10 @@ header {
   font-size: 3rem;
 }
 
+strong {
+  font-size: 1.5rem;
+}
+
 /*== Navbar Styling ==*/
 #navbar {
   background: var(--secondary);
@@ -47,7 +51,7 @@ header {
 
 #navbar header {
   padding: 1.5rem 1rem;
-  background: var(--primary);
+  background: var(--dark);
   box-shadow: var(--shadow);
   color: #fff;
   font-size: 3.5rem;
@@ -80,7 +84,7 @@ header {
 /*== Main Doc Styling ==*/
 
 #main-doc {
-  background: var(--dark);
+  background: #fff;
   grid-area: main;
   padding: 2rem 2rem;
   overflow-y: auto;
@@ -102,6 +106,7 @@ header {
 }
 
 .main-content-text h2 {
+  color: var(--dark);
   font-size: 2.3rem;
   font-weight: 400;
 }
@@ -118,6 +123,12 @@ header {
   line-height: 1.8;
 }
 
+.main-content-text ul li {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
 .main-content-text code {
   font-size: 1.5rem;
   background: #ccc;
@@ -129,7 +140,7 @@ header {
 }
 
 .main-content-text a:hover {
-  color: #fff;
+  color: var(--dark);
 }
 
 /* Example Code styling */
@@ -138,7 +149,7 @@ header {
   position: relative;
   height: auto;
   width: 90%;
-  border: 5px dashed #ccc;
+  border: 5px dashed var(--primary);
   display: flex;
   margin: 2rem auto;
 }
@@ -148,7 +159,7 @@ header {
 .example-code .box-3 {
   height: 100%;
   width: 100px;
-  background: var(--primary);
+  background: #ccc;
   margin: 5px;
   text-align: center;
   font-size: 3rem;
@@ -157,7 +168,7 @@ header {
 
 /* Main / Cross Axis */
 
-.example-code ~ .main-axis-2 {
+.main-axis-2 {
   flex-direction: column;
 }
 
@@ -166,6 +177,44 @@ header {
 .main-axis-2 .box-3 {
   width: 100%;
   margin: 5px auto;
+}
+
+/* Flex-Wrap */
+
+.flex-wrap-1 {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-1 .box-1,
+.flex-wrap-1 .box-2,
+.flex-wrap-1 .box-3 {
+  width: 200px;
+}
+
+.flex-wrap-2 {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-2 .box-1,
+.flex-wrap-2 .box-2,
+.flex-wrap-2 .box-3 {
+  width: 200px;
+}
+
+/* Flex Direction */
+.flex-dir-1 {
+  flex-direction: row;
+}
+
+.flex-dir-2 {
+  flex-direction: row-reverse;
+}
+
+.flex-dir-3 {
+  flex-direction: column;
+}
+.flex-dir-4 {
+  flex-direction: column-reverse;
 }
 
 /*== Media Queries ==*/
@@ -177,7 +226,7 @@ header {
   }
 
   #navbar header {
-    background: var(--primary);
+    background: var(--dark);
     text-align: center;
     width: 100%;
     position: fixed;
