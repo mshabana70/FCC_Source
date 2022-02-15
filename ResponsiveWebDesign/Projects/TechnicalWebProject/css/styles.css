@@ -289,7 +289,31 @@ strong {
 }
 
 /* Flex Justify */
+.flex-just-1 {
+  justify-content: flex-start;
+}
 
+.flex-just-2 {
+  justify-content: flex-end;
+}
+
+.flex-just-3 {
+  justify-content: center;
+}
+
+.flex-just-4 {
+  justify-content: space-around;
+}
+
+.flex-just-5 {
+  justify-content: space-between;
+}
+
+.flex-just-6 {
+  justify-content: space-evenly;
+}
+
+/*== Footer Styling ==*/
 
 /*== Media Queries ==*/
 @media (max-width: 800px) {
