@@ -217,6 +217,19 @@ strong {
   flex-direction: column-reverse;
 }
 
+/* Flex Properties */
+.flex-prop-1 {
+  width: 500px;
+}
+
+.flex-prop-1 .box-1,
+.flex-prop-1 .box-2,
+.flex-prop-1 .box-3 {
+  margin: 5px 0;
+}
+
+
+
 /*== Media Queries ==*/
 @media (max-width: 800px) {
   .grid-container {

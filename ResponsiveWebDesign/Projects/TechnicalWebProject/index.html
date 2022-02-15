@@ -231,7 +231,43 @@
                 <div class="main-content">
                     <ul class="main-content-text">
                         <li>
-                            
+                            <p>
+                                There are three properties that allow developers to target flex items directly. To have control of flex items
+                                we use:
+                            </p>
+                            <ul>
+                                <li><a href="#flex-grow">flex-grow</a></li>
+                                <li><a href="#flex-shrink">flex-shrink</a></li>
+                                <li><a href="#flex-basis">flex-basis</a></li>
+                            </ul>
+                            <p>
+                                What is actually controlled by these flex item properties is the <strong>available space</strong> within our 
+                                flex container. In the example below, we have three flex items that are 100 pixels wide in a flex container that
+                                is 500 pixels wide. With the flex items flush together, that leaves an available space of 200 pixels wide. By default,
+                                the flex container will push that available space to the right of the last flex item.
+                            </p>
+                            <div class="example-code flex-prop-1">
+                                <div class="box-1">1</div>
+                                <div class="box-2">2</div>
+                                <div class="box-3">3</div>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 id="flex-basis">The flex-basis property</h3>
+                            <p>
+                                The <code>flex-basis</code> property defines the size of the flex item it is applied to. The initial value of this property is
+                                <code>auto</code>, which the browser looks to see if the items have a size. Based on the previous example, all of the flex items above
+                                have a width of 100 pixels, which would be used as the value for <code>flex-basis</code>.
+                                <br><br>
+                                If no size is specified for the flex items, then the content's size is used as the <code>flex-basis</code>. For more on the flex-basis
+                                property, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis">MDN Web Docs</a>.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 id="flex-grow">The flex-grow property</h3>
+                            <p>
+                                
+                            </p>
                         </li>
                     </ul>
                 </div>
