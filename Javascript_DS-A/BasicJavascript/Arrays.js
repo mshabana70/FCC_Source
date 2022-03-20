@@ -4,8 +4,43 @@
  * pieces of data in one place.
  */
 
+/* ==== One Dimensional Arrays ==== */
+
+
 // All arrays are declared with an open and closing square bracket
 const sandwich = ["Peanut Butter", "Jelly", "Bread"];
 
 // Lets see whats inside this array using indexes
 console.log("To make a sandwich you need " + sandwich[0] + ", " + sandwich[1] + ", and " + sandwich[2]);
+
+// You can reassign the values of these indexes within an array (even if the array is declared as const)
+sandwich[1] = "Nutella";
+
+// Lets see the new value of the index
+console.log(sandwich[1]);
+
+
+/* ==== Multi Dimensional Arrays ==== */
+
+// You can also nest an array within and array
+// This is known as MULTI-DIMENSIONAL ARRAY
+const teams = [["Bulls", 23, ["coach", "I forgot"]], ["Nets", 7]];
+
+// Lets see what is inside this array
+console.log("Favorite teams: " + "\n" + teams[0] + "\n" + teams[1]);
+
+// When accessing multi-dimensional arrays, its best
+// to think of it as an array of arrays.
+
+// First bracket returns the first level of arrays
+console.log("First array level: " + teams[0]);
+
+// Second bracket returns the second level of arrays
+console.log("Second array level: " + teams[0][1]);
+
+// Third bracket returns the third level of arrays
+console.log("Third array level: " + teams[0][2][0]);
+
+
+/* ==== Array Methods ==== */
+
