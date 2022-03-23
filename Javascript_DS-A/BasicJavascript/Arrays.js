@@ -44,3 +44,5 @@ console.log("Third array level: " + teams[0][2][0]);
 
 /* ==== Array Methods ==== */
 
+// Array push() method: append data easily to the end of an array
+const arr1 = new Array(1, 2, 3);
