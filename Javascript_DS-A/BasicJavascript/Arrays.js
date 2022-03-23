@@ -53,3 +53,15 @@ console.log(arr1);
 const arr2 = [["Mahmoud", 1], ["Shabana", 2]];
 arr2.push(["Elsayed", 3]);
 console.log(arr2);
+
+// Array pop() method: remove last index of an array
+const popArray = [1, 4, 6];
+const lastIndex = popArray.pop();
+console.log("Last index of " + popArray + " WAS " + lastIndex);
+// important to remember that once you pop the array 
+// its last index is removed.
+
+// Array pop() method: second example
+const popArray2 = [["Mahmoud", 1], ["El-Sayed", 2], ["Shabana", 3]];
+const lastName = popArray2.pop();
+console.log("The last name from our array is: " + lastName);
