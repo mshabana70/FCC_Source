@@ -48,3 +48,8 @@ console.log("Third array level: " + teams[0][2][0]);
 const arr1 = new Array(1, 2, 3);
 arr1.push(4);
 console.log(arr1);
+
+// Array push() method: multi-dimensional array
+const arr2 = [["Mahmoud", 1], ["Shabana", 2]];
+arr2.push(["Elsayed", 3]);
+console.log(arr2);
