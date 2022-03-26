@@ -146,7 +146,7 @@ console.log(testElseIf(10));
 
 
 /* ==== Logical order in If Else Statements ==== */
-
+console.log("\n/*********** Logic Order of If Else Statements ***********/\n");
 // It is important to remember that If, else if statements
 // are executed top to bottom so the order you place your 
 // conditional logic is important.
@@ -171,4 +171,8 @@ function bar(x) {
     return "Greater than or equal to two";
   }
 }
+
+// call functions 
+console.log(foo(0));
+console.log(bar(0));
 
