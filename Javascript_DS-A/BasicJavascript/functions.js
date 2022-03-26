@@ -93,3 +93,20 @@ const twoAndFive = sum(2, 5);
 
 // Print variable to see what function assigned to variable
 console.log(twoAndFive);
+
+/* ==== Data Types in Functions ==== */
+
+// CODING CHALLENGE: Stand in Line.
+// Write a function takes in an array parameter and a number 
+// parameter.
+// The Function adds the number parameter in the last index of the
+// passed array, and removes the first index of the array. The removed
+// index is retured.
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    var removedIndex = arr.shift();
+    return removedIndex;
+}
+
+// Creat a test array
