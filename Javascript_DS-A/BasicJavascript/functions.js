@@ -60,3 +60,17 @@ function myFun() {
 
 // Call function and see which scope will return
 console.log("Local variable will return instead of global: " + myFun()); // this will return "Head"
+
+/* ==== Global vs. Local Scope in Functions ==== */
+
+// Function that executes code but does not have a 'return'
+// keyword will return and 'undefined' value.
+
+// Example
+let sum = 0;
+
+function addSum(num) {
+  sum = sum + num;
+}
+
+console.log(addSum(3)); // undefined
