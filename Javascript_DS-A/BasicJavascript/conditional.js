@@ -21,5 +21,25 @@ function test(myCondition) {
 }
 
 // Call function to test conditional
-test(true);
-test(false);
+console.log(test(true));
+console.log(test(false));
+
+
+/* ==== Comparison with the Equality Operator ==== */
+
+// There are many of Equality operators with JS that usually
+// return true or false.
+// This makes them great in conjunction with conditionals.
+
+// '==' operator
+function equalityTest(myVal) {
+    if (myVal == 10) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+// call function
+console.log(equalityTest(8));
+console.log(equalityTest(10));
+console.log(equalityTest(5));
