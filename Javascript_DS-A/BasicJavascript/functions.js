@@ -96,7 +96,7 @@ console.log(twoAndFive);
 
 /* ==== Data Types in Functions ==== */
 
-// CODING CHALLENGE: Stand in Line.
+// CODING CHALLENGE: Stand in Line. (QUEUE)
 // Write a function takes in an array parameter and a number 
 // parameter.
 // The Function adds the number parameter in the last index of the
@@ -116,3 +116,8 @@ const testArray = [1, 2, 3, 4, 5];
 console.log("Array before: " + JSON.stringify(testArray));
 console.log("Removed index: " + nextInLine(testArray, 6));
 console.log("Array after: " + JSON.stringify(testArray));
+
+// BOOLEAN VALUES
+// Booleans represent true and false, on and off, right and wrong,
+// 0 and 1.
+
