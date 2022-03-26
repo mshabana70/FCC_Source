@@ -65,3 +65,20 @@ function strictEqualityTest(myVal) {
 console.log(equalityTest(8));
 console.log(equalityTest(10));
 console.log(equalityTest('10')); // This will not pass
+
+// '!=' INEQUALITY operator
+
+// The inequality operator is the opposite to the equality 
+// operator. It mean NOT equal.
+
+function testNotEqual(val) {
+    if (val != 99) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+// Call Function
+console.log(testNotEqual(10));
+console.log(testNotEqual(99));
+
