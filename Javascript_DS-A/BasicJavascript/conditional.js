@@ -31,7 +31,7 @@ console.log(test(false));
 // return true or false.
 // This makes them great in conjunction with conditionals.
 
-// '==' operator
+// '==' EQUALITY operator
 function equalityTest(myVal) {
     if (myVal == 10) {
         return "Equal";
@@ -42,4 +42,26 @@ function equalityTest(myVal) {
 // call function
 console.log(equalityTest(8));
 console.log(equalityTest(10));
-console.log(equalityTest(5));
+console.log(equalityTest('10')); // This will pass 
+
+// Important to note that '==' with return true even if 
+// the data types of values being compared are not equal.
+// This operator actually attempts to convert both values 
+// into a common data type to compare.
+
+// '===' STRICT EQUALITY operator
+
+// The counterpart of the '==' operator. This operator does
+// not perform a type conversion.
+
+function strictEqualityTest(myVal) {
+    if (myVal === 10) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+// call function
+console.log(equalityTest(8));
+console.log(equalityTest(10));
+console.log(equalityTest('10')); // This will not pass
