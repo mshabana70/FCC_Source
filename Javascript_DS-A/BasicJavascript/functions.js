@@ -43,3 +43,20 @@ localTest();
 // Try to access local variable outside of function
 //console.log(foobar); // this returns a ReferenceError
 
+/* ==== Global vs. Local Scope in Functions ==== */
+
+// It is possible to local AND global variables with
+// the same name.
+// When this is done, the local variable hold precedence
+// over the global variable.
+
+// example of global vs. local
+const someVar = "Hat";
+
+function myFun() {
+    const someVar = "Head";
+    return someVar;
+}
+
+// Call function and see which scope will return
+console.log("Local variable will return instead of global: " + myFun()); // this will return "Head"
