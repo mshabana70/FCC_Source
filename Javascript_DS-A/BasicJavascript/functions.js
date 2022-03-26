@@ -18,6 +18,28 @@ function func() {
     console.log("Variable in function: " + oopsGlobal);
 }
 
+// even outside of function, we can still manipulate oopsGlobal
 func();
 oopsGlobal = oopsGlobal + 5
 console.log("oopsGlobal outside of function " + oopsGlobal);
+
+
+/* ==== Local Scope and Functions ==== */
+
+// Variables declared within a function, as well as function parameters
+// have a LOCAL scope.
+// This means they are only visible within the function.
+
+
+// Example of local scope
+function localTest() {
+    let foobar = "foo";
+    console.log(foobar);
+}
+
+// Call function
+localTest();
+
+// Try to access local variable outside of function
+//console.log(foobar); // this returns a ReferenceError
+
