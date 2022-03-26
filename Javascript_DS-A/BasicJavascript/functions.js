@@ -43,6 +43,7 @@ localTest();
 // Try to access local variable outside of function
 //console.log(foobar); // this returns a ReferenceError
 
+
 /* ==== Global vs. Local Scope in Functions ==== */
 
 // It is possible to local AND global variables with
@@ -61,6 +62,7 @@ function myFun() {
 // Call function and see which scope will return
 console.log("Local variable will return instead of global: " + myFun()); // this will return "Head"
 
+
 /* ==== Global vs. Local Scope in Functions ==== */
 
 // Function that executes code but does not have a 'return'
@@ -74,3 +76,20 @@ function addSum(num) {
 }
 
 console.log(addSum(3)); // undefined
+
+
+/* ==== Global vs. Local Scope in Functions ==== */
+
+// You can also assign a function output to a variable using 
+// a 'return' keyword in a function.
+
+// Example
+function sum(a, b) {
+    return a + b;
+}
+
+// Assign Function to variable
+const twoAndFive = sum(2, 5);
+
+// Print variable to see what function assigned to variable
+console.log(twoAndFive);
