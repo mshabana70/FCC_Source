@@ -101,3 +101,74 @@ function testStrictNotEqual(val) {
 console.log(testStrictNotEqual(10));
 console.log(testStrictNotEqual(17));
 console.log(testStrictNotEqual('17'));
+
+
+/* ==== Conditional Logic with If Else Statements ==== */
+console.log("\n/*********** If Else Statements ***********/\n");
+// Now, if the condition is false, any code within the else 
+// code block will execute.
+
+// If Else statement
+function testElse(val) {
+    let result = "";
+
+    if (val > 5) {
+        result = "Bigger than 5";
+    } else {
+        result = "5 or smaller";
+    }
+
+    return result;
+}
+
+console.log(testElse(4));
+console.log(testElse(10));
+
+
+/* ==== Conditional Logic with If Else Statements ==== */
+console.log("\n/*********** Else If Statements ***********/\n");
+// If you have multiple conditions that need to be addressed,
+// you can chain if statements together with else if 
+// statements.
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+      return "Between 5 and 10";
+  }
+}
+
+console.log(testElseIf(7));
+console.log(testElseIf(10));
+
+
+/* ==== Logical order in If Else Statements ==== */
+
+// It is important to remember that If, else if statements
+// are executed top to bottom so the order you place your 
+// conditional logic is important.
+
+// Example: compare function logic
+function foo(x) {
+  if (x < 1) {
+    return "Less than one";
+  } else if (x < 2) {
+    return "Less than two";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+
+function bar(x) {
+  if (x < 2) {
+    return "Less than two";
+  } else if (x < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+
