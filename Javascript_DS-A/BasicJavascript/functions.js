@@ -84,12 +84,12 @@ console.log(addSum(3)); // undefined
 // a 'return' keyword in a function.
 
 // Example
-function sum(a, b) {
+function sumInt(a, b) {
     return a + b;
 }
 
 // Assign Function to variable
-const twoAndFive = sum(2, 5);
+const twoAndFive = sumInt(2, 5);
 
 // Print variable to see what function assigned to variable
 console.log(twoAndFive);
@@ -109,4 +109,10 @@ function nextInLine(arr, item) {
     return removedIndex;
 }
 
-// Creat a test array
+// Create a test array
+const testArray = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Array before: " + JSON.stringify(testArray));
+console.log("Removed index: " + nextInLine(testArray, 6));
+console.log("Array after: " + JSON.stringify(testArray));
