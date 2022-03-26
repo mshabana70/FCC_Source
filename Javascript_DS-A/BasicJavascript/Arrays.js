@@ -65,3 +65,17 @@ console.log("Last index of " + popArray + " WAS " + lastIndex);
 const popArray2 = [["Mahmoud", 1], ["El-Sayed", 2], ["Shabana", 3]];
 const lastName = popArray2.pop();
 console.log("The last name from our array is: " + lastName);
+
+// Array shift() method: remove from beginning of array (like pop())
+const shiftArr = ["Mahmoud", "Shabana", "Rulez!"];
+const firstIndex = shiftArr.shift();
+console.log("First element in array: "+ firstIndex);
+console.log("new array is " + shiftArr);
+
+// Array unshift() method: add from beginning of array (like push())
+const unshiftArr = ["Mahmoud", "Shabana"];
+unshiftArr.unshift("Software Developer");
+console.log("The current array after unshift " + unshiftArr);
+unshiftArr.shift();
+unshiftArr.unshift("Future Ethical Hacker ;)");
+console.log("The current array after unshift " + unshiftArr);
