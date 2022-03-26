@@ -30,8 +30,9 @@ console.log(test(false));
 // There are many of Equality operators with JS that usually
 // return true or false.
 // This makes them great in conjunction with conditionals.
-
+console.log("\n/*********** EQUALITY ***********/\n");
 // '==' EQUALITY operator
+
 function equalityTest(myVal) {
     if (myVal == 10) {
         return "Equal";
@@ -50,7 +51,7 @@ console.log(equalityTest('10')); // This will pass
 // into a common data type to compare.
 
 // '===' STRICT EQUALITY operator
-
+console.log("\n/*********** STRICT EQUALITY ***********/\n");
 // The counterpart of the '==' operator. This operator does
 // not perform a type conversion.
 
@@ -67,7 +68,7 @@ console.log(equalityTest(10));
 console.log(equalityTest('10')); // This will not pass
 
 // '!=' INEQUALITY operator
-
+console.log("\n/*********** INEQUALITY ***********/\n");
 // The inequality operator is the opposite to the equality 
 // operator. It mean NOT equal.
 
@@ -80,5 +81,23 @@ function testNotEqual(val) {
 
 // Call Function
 console.log(testNotEqual(10));
+console.log(testNotEqual('10'));
 console.log(testNotEqual(99));
+console.log(testNotEqual('99'));
 
+// '!==' STRICT INEQUALITY operator
+console.log("\n/*********** STRICT INEQUALITY ***********/\n");
+// Once again the logical opposite of the strict equality 
+// operator (===).
+
+function testStrictNotEqual(val) {
+    if (val !== 17) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+// Call function 
+console.log(testStrictNotEqual(10));
+console.log(testStrictNotEqual(17));
+console.log(testStrictNotEqual('17'));
