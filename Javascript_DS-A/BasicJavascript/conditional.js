@@ -176,3 +176,123 @@ function bar(x) {
 console.log(foo(0));
 console.log(bar(0));
 
+/* ==== Conditionals with Switch Case statements ==== */
+console.log("\n/*********** Switch Case Statements ***********/\n");
+// If you have many options to choose from, it might be
+// best to use a switch case statement. A switch statement
+// tests a value and can have many case statements which
+// define various possible values. Statements are executed
+// from the first matched case value until a break is encountered.
+
+// Example: switch case statement
+let lowercaseLetter = "b";
+
+switch (lowercaseLetter) {
+    case "a":
+        console.log("A");
+        break;
+    case "b":
+        console.log("B");
+        break;
+}
+
+// Case values are tested with strict equality (===)
+
+// Real example: caseInSwitch function
+
+function caseInSwitch(val) {
+    let answer = "";
+    switch (val) {
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+            break;
+    }
+
+    return answer;
+}
+
+// Test function
+console.log(caseInSwitch("1"));
+console.log(caseInSwitch("3"));
+console.log(caseInSwitch("4"));
+
+// Default Switch
+
+// When you cant specify all values for you case statements
+// you will need to use the Default case. Here you can default
+// to a code block when no cases are bet in the switch case 
+// statement.
+
+// example:
+
+function switchOfStuff(val) {
+    let answer1 = "";
+
+    switch (val) {
+        case "a":
+            answer1 = "apple";
+            break;
+        case "b":
+            answer1 = "bird";
+            break;
+        case "c":
+            answer1 = "cat";
+            break;
+        default:
+            answer1 = "stuff";
+            break;
+    }
+
+    return answer1;
+}
+
+// Test function
+console.log(switchOfStuff("a"));
+console.log(switchOfStuff("c"));
+console.log(switchOfStuff("e")); // Should return "stuff"
+
+// Multiple inputs with same output
+
+// If you have multiple cases that can return the same output
+// you can write your switch statement as follows.
+
+function sequentialSizes(val) {
+    let answer = "";
+
+    switch (val) {
+        case 1:
+        case 2:
+        case 3:
+            answer = "Low";
+            break;
+        case 4:
+        case 5:
+        case 6:
+            answer = "Mid";
+            break;
+        case 7:
+        case 8:
+        case 9:
+            answer = "High";
+            break;
+        
+    }
+
+    return answer;
+}
+
+// Test function
+console.log(sequentialSizes(1));
+console.log(sequentialSizes(2));
+console.log(sequentialSizes(7));
+console.log(sequentialSizes(4));
+console.log(sequentialSizes(9));
