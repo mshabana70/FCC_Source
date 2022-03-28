@@ -128,5 +128,20 @@ console.log("\n/*********** ACCESSING OBJECT PROPERTIES (VARIABLES) ***********/
     object using a variable. The value of this variable has to match 
     that of the name of the property.
 
-    
+    This can be useful for iterating through an object's properties or 
+    when accessing a lookup table.
 */
+
+// Example of Variables to access Object Properties
+const dogs = {
+    Fido: "Mutt",
+    Hunter: "Doberman",
+    Snoopie: "Beagle"
+};
+
+const dogName = "Hunter";
+const myBreed = dogs[dogName];
+console.log(myBreed);
+
+
+
