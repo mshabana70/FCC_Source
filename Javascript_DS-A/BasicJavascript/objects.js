@@ -222,3 +222,38 @@ console.log(myParrot.wings);
 myParrot["color"] = "Rainbow";
 console.log(myParrot["color"]);
 
+
+// Add Object Properties
+console.log("\n/*********** DELETING OBJECT PROPERTIES ***********/\n");
+
+/*
+    You can also delete properties from an object using the 
+    'delete' keyword, followed by the property you wish to delete. 
+*/
+
+// Example of deleting a property
+const ourTV = {
+    "brand": "Samsung",
+    "size": 42,
+    "type": "Smart",
+    "internet": true,
+    "resolution": 1080
+};
+
+console.log(ourTV.type); // Smart
+delete ourTV.type;
+console.log(ourTV.type); // undefined
+
+
+// Using Objects for Lookups
+console.log("\n/*********** USING OBJECTS FOR LOOKUPS ***********/\n");
+
+/*
+    Objects can be thought of as a key/value storage data structure,
+    similar to a dictionary. If you have tabular data, you can use 
+    an object to lookup values rather than a switch statement or an
+    if/else chain. This is very useful when you know that you is 
+    limited to a certain range of values.
+*/
+
+// Example of obje
