@@ -94,4 +94,27 @@ console.log("/*********** ACCESSING OBJECT PROPERTIES (BRACKET) ***********/\n")
 */
 
 // Example of Object using Bracket Notation
+const bracketObj = {
+    "Space Name": "Kirk",
+    "More Space": "Spock",
+    "NoSpace": "USS Enterprise"
+};
+// Note: Property names with spaces in them must be in quotes
 
+console.log(bracketObj["Space Name"]); // Kirk
+console.log(bracketObj["More Space"]); // Spock
+console.log(bracketObj["NoSpace"]);    // USS Enterprise
+
+
+// Another Example of Bracket Notation
+const testBracketObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+
+const entreeValue = testBracketObj["an entree"];
+const drinkValue = testBracketObj["the drink"];
+
+console.log(`Today's entree is ${entreeValue}`);
+console.log(`Today's drinks are ${drinkValue}`);
