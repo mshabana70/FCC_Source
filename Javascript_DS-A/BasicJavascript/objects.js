@@ -118,3 +118,15 @@ const drinkValue = testBracketObj["the drink"];
 
 console.log(`Today's entree is ${entreeValue}`);
 console.log(`Today's drinks are ${drinkValue}`);
+
+
+// Accessing Object Properties with Variables
+console.log("\n/*********** ACCESSING OBJECT PROPERTIES (VARIABLES) ***********/\n");
+
+/*
+    You can also use bracket notation to access properties on an 
+    object using a variable. The value of this variable has to match 
+    that of the name of the property.
+
+    
+*/
