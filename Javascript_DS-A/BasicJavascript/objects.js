@@ -83,7 +83,7 @@ const shirtValue = testObj.shirt;
 
 
 // Accessing Object Properties with Bracket Notation
-console.log("/*********** ACCESSING OBJECT PROPERTIES (BRACKET) ***********/\n");
+console.log("\n/*********** ACCESSING OBJECT PROPERTIES (BRACKET) ***********/\n");
 
 /*
     If the object you are trying to access has a space in its name,
