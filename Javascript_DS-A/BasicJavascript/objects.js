@@ -47,7 +47,7 @@ const myDog = {
 
 
 // Accessing Object Properties with Dot Notation
-console.log("/*********** ACCESSING OBJECT PROPERTIES ***********/\n");
+console.log("/*********** ACCESSING OBJECT PROPERTIES (DOT) ***********/\n");
 
 /*
     There are two ways to access the properties of a object:
@@ -70,4 +70,28 @@ const prop2Val = myObj.prop2; // Value: val2
 
 console.log(`Accesssing the prop1 property of myObj: ${prop1Val}`);
 console.log(`Accesssing the prop2 property of myObj: ${prop2Val}`);
+
+// Another Example on dot notation:
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+
+
+// Accessing Object Properties with Bracket Notation
+console.log("/*********** ACCESSING OBJECT PROPERTIES (BRACKET) ***********/\n");
+
+/*
+    If the object you are trying to access has a space in its name,
+    you will need to use bracket notation.
+
+    You can still use bracket notation on objects with no space in
+    its name as well.
+*/
+
+// Example of Object using Bracket Notation
 
