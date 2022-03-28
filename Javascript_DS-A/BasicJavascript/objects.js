@@ -181,4 +181,44 @@ const player = testVarObj[playerNumber];
 console.log(`One of the greatest QBs in 49ers history is Joe ${player}`);
 
 
+// Update Object Properties
+console.log("\n/*********** UPDATING OBJECT PROPERTIES ***********/\n");
+
+/*
+    You can update a JavaScript Object's properties at any time,
+    just like you would update a variable. You can use either Dot
+    or Bracket notation to update an object.
+*/
+
+// Example Object
+const myParrot = {
+    "name": "Skipper",
+    "legs": 2,
+    "tails": 1,
+    "Friends": ["The Neighbors", "Kowalski", "Our dog Camper"]
+};
+
+// Update our Parrots name
+myParrot.name = "Happy Skipper";
+myParrot["Friends"].push("Our Cat Kitty");
+
+console.log(myParrot["name"]);
+console.log(myParrot.Friends);
+
+
+// Add Object Properties
+console.log("\n/*********** ADDING OBJECT PROPERTIES ***********/\n");
+
+/*
+    You can add properties to existing JavaScript objects the same way 
+    you would modify them.
+*/
+
+// Example of adding a property (dot notation)
+myParrot.wings = true;
+console.log(myParrot.wings);
+
+// Example of adding a property (Bracket notation)
+myParrot["color"] = "Rainbow";
+console.log(myParrot["color"]);
 
