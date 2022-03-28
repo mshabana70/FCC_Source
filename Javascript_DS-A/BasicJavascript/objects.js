@@ -144,4 +144,41 @@ const myBreed = dogs[dogName];
 console.log(myBreed);
 
 
+/*
+    Another way you can use this concept is when the 
+    property's name is collected dynamically during the
+    program execution, as follows:
+*/
+
+// Dynamic Example:
+const someObj = {
+    propName: "John"
+};
+
+function propPrefix(str) {
+    const s = "prop";
+    return s + str;
+}
+
+const someProp = propPrefix("Name");
+console.log(someObj[someProp]);
+
+/*
+    Note: We do not use quotes around the variable name 
+    when using it to access the property because we are
+    using the value of the variable, not the name.
+*/
+
+// Another example of using variables in bracket notation
+const testVarObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+
+const playerNumber = 16;
+const player = testVarObj[playerNumber];
+console.log(`One of the greatest QBs in 49ers history is Joe ${player}`);
+
+
 
