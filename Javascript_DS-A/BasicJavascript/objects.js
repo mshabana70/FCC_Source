@@ -256,4 +256,71 @@ console.log("\n/*********** USING OBJECTS FOR LOOKUPS ***********/\n");
     limited to a certain range of values.
 */
 
-// Example of obje
+// Example of objects with tabular data
+
+const alphabet = {
+    1: "Z",
+    2: "Y",
+    3: "X",
+    4: "W",
+    5: "etc",
+    24: "C",
+    25: "B",
+    26: "A"
+};
+
+console.log(alphabet[1]);
+console.log(alphabet[2]);
+
+const val = 24;
+console.log(alphabet[val]);
+
+// Another example of using objects for lookups
+
+function phoneticLookup(val) {
+  let result = "";
+
+  /* 
+  switch(val) {
+    case "alpha":
+      result = "Adams";
+      break;
+    case "bravo":
+      result = "Boston";
+      break;
+    case "charlie":
+      result = "Chicago";
+      break;
+    case "delta":
+      result = "Denver";
+      break;
+    case "echo":
+      result = "Easy";
+      break;
+    case "foxtrot":
+      result = "Frank";
+  }
+  */
+
+  // Instead of switch case, use object
+  const lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+
+  result = lookup[val];
+
+  // Only change code above this line
+  return result;
+}
+
+console.log(phoneticLookup("charlie"));
+console.log(phoneticLookup("bravo"));
+console.log(phoneticLookup("echo"));
+
+
+
