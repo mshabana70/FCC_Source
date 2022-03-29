@@ -393,3 +393,32 @@ const ourMusic = [
     But it is not assigned to a variable, rather just a page of objects in an array format.
 */
 
+// Return object array 
+console.log(ourMusic);
+
+
+// Accessing Nested Objects 
+console.log("\n/*********** ACCESSING NESTING OBJECTS ***********/\n");
+
+/*
+    The sub properties of a complex object can be accessed by chaining together
+    the dot or bracket notation.
+*/
+
+// Example of Complext Object with Nested Properties
+const ourStorage = {
+    "desk": {
+        "drawer": "stapler"
+    },
+    "cabinet": {
+        "top drawer": {
+            "folder1": "a file",
+            "folder2": "secrets"
+        },
+        "bottom drawer": "soda"
+    }
+};
+
+// accessing nested objects and their properties
+console.log(ourStorage.cabinet["top drawer"]); // { folder1: a file, folder2: secrets}
+console.log(ourStorage.desk.drawer); // stapler
