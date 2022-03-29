@@ -323,4 +323,35 @@ console.log(phoneticLookup("bravo"));
 console.log(phoneticLookup("echo"));
 
 
+// Testing Objects for Properties
+console.log("\n/*********** TESTING OBJECTS FOR PROPERTIES ***********/\n");
 
+/*
+    Sometimes it is useful to check if the property of a 
+    given object exists or not. We can use the 
+    .hasOwnProperty(propname) method of object to determine if 
+    that object have the given property name. .hasOwnProperty() 
+    returns true or false if the property is found or not.
+*/
+
+// Example of Testing Object Properties
+const testingObject = {
+    top: "hat",
+    bottom: "pants"
+};
+
+console.log(testingObject.hasOwnProperty("top")); // true
+console.log(testingObject.hasOwnProperty("middle")); // false
+
+
+// Another example of testing object property
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+console.log(checkObj(testingObject, "top"));
+console.log(checkObj(testingObject, "Middle"));
