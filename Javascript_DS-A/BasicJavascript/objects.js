@@ -355,3 +355,41 @@ function checkObj(obj, checkProp) {
 
 console.log(checkObj(testingObject, "top"));
 console.log(checkObj(testingObject, "Middle"));
+
+
+// Manipulating Complex Objects 
+console.log("\n/*********** TESTING OBJECTS FOR PROPERTIES ***********/\n");
+
+/*
+    There will be times where you would want to store data is a 
+    flexible data structure. A JavaScript object is one way to handle flexible
+    data. They allow for arbitrary combinations of strings, numbers, booleans, arrays,
+    functions, and objects.
+*/
+
+// Example of a complex object 
+const ourMusic = [
+    {
+        "artist": "Daft Punk",
+        "title": "Homework",
+        "release_year": 1997,
+        "formats": [
+            "CD",
+            "Cassette",
+            "LP"
+        ],
+        "gold": true
+    }
+];
+
+/*
+    The example above is actually  not an object but an array. The array contains
+    one object inside (the {}). The object has various pieces of metadata about an 
+    album. It also has a nested array ("formats"). If you want to add more records,
+    you can do this by adding the top level array "ourMusic". So essentially, "ourMusic"
+    is an array of objects. 
+
+    Note: This is how JavaScript Object Notation (or JSON) is written in this format. 
+    But it is not assigned to a variable, rather just a page of objects in an array format.
+*/
+
