@@ -422,3 +422,21 @@ const ourStorage = {
 // accessing nested objects and their properties
 console.log(ourStorage.cabinet["top drawer"]); // { folder1: a file, folder2: secrets}
 console.log(ourStorage.desk.drawer); // stapler
+
+
+// Another example of accessing nested objects and their properties
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+// Accessing nested objects and their properties
+const gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents); // maps
