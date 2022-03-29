@@ -440,3 +440,38 @@ const myStorage = {
 // Accessing nested objects and their properties
 const gloveBoxContents = myStorage.car.inside["glove box"];
 console.log(gloveBoxContents); // maps
+
+
+// Accessing Nested Arrays
+console.log("\n/*********** ACCESSING NESTING ARRAYS ***********/\n");
+
+/*
+    We know from previous examples that objects can contain nested objects and 
+    nested arrays. Similar to how we accessed nested objects, we can chain bracket 
+    notation for access to nested arrays.
+*/
+
+// An example array of nested objects and arrays
+const ourPets = [
+    {
+        animalType: "cat",
+        names: [
+            "Meowzer",
+            "Fluffy",
+            "Kit-Cat"
+        ]
+    },
+    {
+        animalType: "dog",
+        names: [
+            "Spot",
+            "Bowser",
+            "Frankie"
+        ]
+    }
+];
+
+// Accessing nested arrays within the ourPet array of objects
+console.log(ourPets[0].names[1]); // Fluffy
+console.log(ourPets[1].names[2]); // Frankie
+console.log(`Our ${ourPets[1].animalType}'s name is ${ourPets[1].names[0]}`);
