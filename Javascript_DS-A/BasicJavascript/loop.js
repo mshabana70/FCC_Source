@@ -128,3 +128,39 @@ for (let i = 9; i >= 1; i -= 2) {
 
 // Return backArr
 console.log(`Array of even integers from 10 to 0: ${backOddArr}`); // [10, 8, 6, 4, 2, 0]
+
+
+// FOR LOOPS (ARRAY)
+console.log("\n/*************** FOR LOOPS (ARRAY) ***************/\n")
+
+/*
+    Up to this point, we have only used for loops to iterate values and push them to arrays.
+    But what if we had an array of values already, and we wanted to iterate through those 
+    existing values. With for loops, rather than push a value to the array, we can use integer
+    values to iterate through the indexes of an array. 
+*/
+
+// Example of For loop interating through Array
+const arr = [10, 9, 8, 7, 6, 5];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+/*
+    We are setting our condition based on the length of the array. This is because we dont want our
+    initialized variable to exceed the value of the last index in the array (arr.length - 1).
+*/
+
+// Another example from FCC exercise
+// Setup
+const myArr = [2, 3, 4, 5, 6];
+
+// Only change code below this line
+let total = 0;
+for (let i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+
+// Return total
+console.log(`Total of array values: ${total}`);
