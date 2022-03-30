@@ -34,3 +34,26 @@ while (i >= 0) {
 
 // Return myArray
 console.log(myArray); // [5, 4, 3, 2, 1, 0]
+
+
+// FOR LOOPS
+console.log("\n/*************** FOR LOOPS ***************/\n")
+
+/*
+    Most common type of loop in JS. The For loop is declared with three 
+    optional conditions that are seperated by a semicolon.
+    
+    for (a; b; c) {...}
+
+    'a' is the initialization statement, 'b' is the condition statement of 
+    the initialized variable in 'a', and 'c' is the final expression (usually
+    how you intend to iterate the initialized variable in 'a').
+
+    'a' is initialized only one time before the loop is run. 'b' condition is 
+    evaluated at the begining of every loop iteration. As long as the condition
+    is true, it will keep running. If it is false at the beginning of the loop
+    iteration, than the loop is terminated. 'c' is executed at the end of every 
+    loop iteration, before the 'b' condition is checked for the next loop iteration.
+
+*/
+
