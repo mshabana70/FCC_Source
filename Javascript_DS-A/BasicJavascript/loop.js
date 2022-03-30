@@ -201,4 +201,40 @@ function multiplyAll(arr) {
 // test array
 const productArr = [[1, 2], [3, 4], [5, 6, 7]];
 
-console.log(`The product of all the values in this arrary \n${productArr} is ${multiplyAll(productArr)}`);
+// Return product and productArr
+console.log(`The product of all the values in this arrary \n[${productArr}] is ${multiplyAll(productArr)}`);
+
+
+// DO WHILE LOOPS
+console.log("\n/*************** DO WHILE LOOPS ***************/\n")
+
+/*
+    Next for of loops in JS is do...while loops. The reason it is 
+    called a do while loop is because it will first 'do' the block of code 
+    on the first iteration of the loop, then it will check the state of the 
+    condition if it is true or false. Similar to a while loop but the difference
+    is that this will execute the block of code first before checking the loop
+    condition.
+
+    What makes the do while loop special is that you can guarantee that your
+    block of code will run atleast once regardless of what the state of the loop 
+    condition is (true or false)
+*/
+
+// Example of while vs do while
+const doArray = [];
+let k = 5;
+
+// while loop (will not run)
+while (k < 5) {
+    doArray.push(k);
+    k++;
+}
+
+// do while (will run atleast once)
+do {
+    doArray.push(k);
+    console.log(`This is from the do while loop! ${doArray}`);
+    k++;
+} while (k < 5);
+
