@@ -57,3 +57,33 @@ console.log("\n/*************** FOR LOOPS ***************/\n")
 
 */
 
+// Example of For loop syntax
+const ourArray = [];
+
+for (let i = 0; i < 5; i++) {
+    ourArray.push(i);
+}
+
+// Return ourArray
+console.log(ourArray); // [0, 1, 2, 3, 4]
+
+
+// FOR LOOPS (ODD/EVEN)
+console.log("\n/*************** FOR LOOPS (ODD/EVEN) ***************/\n")
+
+/*
+    For loops dont have to iterate one at a time. Simply 
+    by changing the final expression in you for loop, we can
+    count by even numbers or odd number, depending on what you 
+    set your initialization variable to.
+*/
+
+// Example of For Loop counting even numbers
+const evenArr = [];
+
+for (let i = 0; i <= 10; i += 2) {
+    evenArr.push(i);
+}
+
+// Return evenArr
+console.log(`Array of even integers between 0 - 10: ${evenArr}`); // [0, 2, 4, 6, 8, 10]
