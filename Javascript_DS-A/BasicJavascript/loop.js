@@ -87,3 +87,13 @@ for (let i = 0; i <= 10; i += 2) {
 
 // Return evenArr
 console.log(`Array of even integers between 0 - 10: ${evenArr}`); // [0, 2, 4, 6, 8, 10]
+
+// Example of For Loop counting odd numbers
+const oddArr = [];
+
+for (let j = 1; j <= 10; j += 2) {
+    oddArr.push(j);
+}
+
+// Return evenArr
+console.log(`Array of odd integers between 1 - 10: ${oddArr}`); // [1, 3, 5, 7, 9]
