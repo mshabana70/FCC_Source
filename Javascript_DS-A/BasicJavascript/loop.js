@@ -175,3 +175,30 @@ console.log("\n/*************** NESTED FOR LOOPS ***************/\n")
 */
 
 // Example of nested for loop
+const nestedArr = [[1, 2], [3, 4], [5, 6]];
+
+for (let i = 0; i < nestedArr.length; i++) {
+
+    for (let j = 0; j < nestedArr[i].length; j++) {
+        console.log(nestedArr[i][j]);
+    }
+
+}
+
+// Another example of nested for loop from FCC exercise
+
+function multiplyAll(arr) {
+    let product = 1;
+
+    for (let i = 0; i < arr.length; i++) {
+        for(let j = 0; j < arr[i].length; j++) {
+            product *= arr[i][j];
+        }
+    }
+    // return the product of all the numbers in the sub-arrays
+    return product;
+}
+// test array
+const productArr = [[1, 2], [3, 4], [5, 6, 7]];
+
+console.log(`The product of all the values in this arrary \n${productArr} is ${multiplyAll(productArr)}`);
