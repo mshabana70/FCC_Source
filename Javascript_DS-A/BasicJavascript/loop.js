@@ -97,3 +97,24 @@ for (let j = 1; j <= 10; j += 2) {
 
 // Return evenArr
 console.log(`Array of odd integers between 1 - 10: ${oddArr}`); // [1, 3, 5, 7, 9]
+
+
+// FOR LOOPS (BACKWARDS)
+console.log("\n/*************** FOR LOOPS (BACKWARDS) ***************/\n")
+
+/*
+    You can also count  backwards with for loops. Once again,
+    just change how you iterate your initialization variable. Rather than
+    increment, you can also decrement the variable by however many values
+    you need.
+*/
+
+// Example of Backwards For Loop
+const backArr = [];
+
+for (let i = 10; i >= 0; i -= 2) {
+    backArr.push(i);
+}
+
+// Return backArr
+console.log(`Array of even integers from 10 to 0: ${backArr}`); // [10, 8, 6, 4, 2, 0]
