@@ -164,3 +164,14 @@ for (let i = 0; i < myArr.length; i++) {
 
 // Return total
 console.log(`Total of array values: ${total}`);
+
+
+// NESTED FOR LOOPS
+console.log("\n/*************** NESTED FOR LOOPS ***************/\n")
+
+/*
+    If you have array that is multi-dimensional, you can use the previous
+    examples logic to loop through both the array and any sub-arrays.
+*/
+
+// Example of nested for loop
