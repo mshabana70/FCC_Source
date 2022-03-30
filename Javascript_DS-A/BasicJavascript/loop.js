@@ -109,12 +109,22 @@ console.log("\n/*************** FOR LOOPS (BACKWARDS) ***************/\n")
     you need.
 */
 
-// Example of Backwards For Loop
-const backArr = [];
+// Example of Backwards For Loop (even)
+const backEvenArr = [];
 
 for (let i = 10; i >= 0; i -= 2) {
-    backArr.push(i);
+    backEvenArr.push(i);
 }
 
 // Return backArr
-console.log(`Array of even integers from 10 to 0: ${backArr}`); // [10, 8, 6, 4, 2, 0]
+console.log(`Array of even integers from 10 to 0: ${backEvenArr}`); // [10, 8, 6, 4, 2, 0]
+
+// Example of Backwards For Loop (odd)
+const backOddArr = [];
+
+for (let i = 9; i >= 1; i -= 2) {
+    backOddArr.push(i);
+}
+
+// Return backArr
+console.log(`Array of even integers from 10 to 0: ${backOddArr}`); // [10, 8, 6, 4, 2, 0]
