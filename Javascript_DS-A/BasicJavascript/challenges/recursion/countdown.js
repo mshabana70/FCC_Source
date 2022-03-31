@@ -1,5 +1,5 @@
 // USE RECURSION TO CREATE A COUNTDOWN
-
+console.log("\n/********** COUNTUP USING RECURSION **********/\n");
 /*
     In a previous challenge, you learned how to use recursion to replace 
     a for loop. Now, let's look at a more complex function that returns 
@@ -33,6 +33,10 @@ function countUp(n) {
 // Test recursive function
 console.log(countUp(5));
 
+
+// COUNTDOWN
+console.log("\n/********** COUNTDOWN USING RECURSION **********/\n");
+
 /*
     At first, this seems counterintuitive since the value of n decreases, 
     but the values in the final array are increasing. This happens because 
@@ -51,3 +55,13 @@ console.log(countUp(5));
     of any kind.
 */
 
+function countdown(n){
+    if (n < 1) {
+        return [];
+    }
+    const countDownArr = countdown(n - 1);
+    countDownArr.unshift(n);
+    return countDownArr;
+}
+
+console.log(countdown(5));
