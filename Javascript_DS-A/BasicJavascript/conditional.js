@@ -330,3 +330,37 @@ function findGreaterTernary(a, b) {
 function checkEqual(a, b) {
     return a == b ? "Equal" : "Not Equal";
 }
+
+
+// TERNARY OPERATOR (MULTIPLE CONDITIONS)
+console.log("\n/*********** TERNARY OPERATOR (MULTIPLE) ***********/\n");
+
+/*
+    What if you need an alternative to if else if expression?
+*/
+
+// Example of chained if statement
+function findGreaterOrEqual(a, b) {
+    if (a === b) {
+        return "a and b are equal";
+    } else if (a > b) {
+        return "a is greater";
+    } else {
+        return "b is greater";
+    }
+}
+
+function findGreaterOrEqual(a, b) {
+    return (a === b) ? "a and b are equal"
+            : (a > b) ? "a is greater"
+            : "b is greater";
+} // is this considered best practice^^^
+
+// Another example
+
+function checkSign(num) {
+    return (num === 0) ? "zero"
+            : (num > 0) ? "positive"
+            : "negative";
+}
+
