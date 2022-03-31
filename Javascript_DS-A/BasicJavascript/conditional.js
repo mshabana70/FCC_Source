@@ -296,3 +296,37 @@ console.log(sequentialSizes(2));
 console.log(sequentialSizes(7));
 console.log(sequentialSizes(4));
 console.log(sequentialSizes(9));
+
+
+// TERNARY OPERATOR
+console.log("\n/*********** TERNARY OPERATOR ***********/\n");
+
+/*
+    Also known as the conditional operator, is a javascript syntax that
+    creates one line if-else expressions. The syntax is as follows:
+
+    a ? b : c
+
+    'a' is the condition of the if-else statement. 'b' is the code to run
+    when the condition ('a') is true, and c is the code to run when the 
+    condition ('a') returns false.
+*/
+
+// Example of a traditional if statement
+function findGreater(a, b) {
+    if (a > b) {
+        return "a is greater";
+    } else {
+        return "b is greater or equal";
+    }
+}
+
+function findGreaterTernary(a, b) {
+    return a > b ? "a is greater" : "b is greater or equal";
+}
+
+// Another example 
+
+function checkEqual(a, b) {
+    return a == b ? "Equal" : "Not Equal";
+}
